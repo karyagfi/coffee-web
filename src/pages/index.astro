@@ -1,16 +1,15 @@
 ---
+import AppLayout from "../layouts/AppLayout.astro"
+import Hero from "../components/Hero.astro"
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<AppLayout title="Home">
+	<Hero image="images/coffee01.jpg"/>
+
+  <section class="flex flex-col md:flex-row p-4 gap-4">
+    <article class="md:w-1/2">
+      <img src="img01.jpg" alt="">
+    </article>
+  </section>
+</AppLayout>
